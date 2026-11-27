@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica 2 - Colores aleatorios</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+  <script>
+    function setup() {
+      createCanvas(800, 800);
+
+      // Fondo verde claro
+      background(180, 240, 180);
+
+      // Grosor de todas las líneas
+      strokeWeight(4);
+
+      // LETRA 1: D
+      stroke(random(255), random(255), random(255));
+      line(100, 200, 100, 600); // Línea vertical izquierda
+      line(100, 200, 220, 260); // Curva superior superior
+      line(220, 260, 220, 540); // Línea vertical derecha
+      line(220, 540, 100, 600); // Curva inferior
+
+      // LETRA 2: D
+      stroke(random(255), random(255), random(255));
+      line(380, 200, 380, 600); // Línea vertical izquierda
+      line(380, 200, 500, 260); // Curva superior
+      line(500, 260, 500, 540); // Línea vertical derecha
+      line(500, 540, 380, 600); // Curva inferior
+
+      // LETRA 3: P
+      stroke(random(255), random(255), random(255));
+      line(620, 200, 620, 600); // Línea vertical principal
+      line(620, 200, 720, 200); // Parte superior horizontal
+      line(720, 200, 720, 400); // Curva/lateral derecho de la pancita
+      line(720, 400, 620, 400); // Parte inferior de la pancita
+    }
+  </script>
+</body>
+</html>
